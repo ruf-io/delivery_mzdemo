@@ -1,0 +1,23 @@
+{
+  "type" : "record",
+  "name" : "driver_location",
+  "namespace" : "com.materialize.geodemo",
+  "fields" : [ {
+    "name" : "id",
+    "type" : "int",
+    "doc" : "Driver ID"
+  }, {
+    "name" : "lat",
+    "type" : "float",
+    "doc" : "Driver latitude"
+  }, {
+    "name" : "lon",
+    "type" : "float",
+    "doc" : "Driver Longitude"
+  }, {
+    "name" : "ts",
+    "type" : "long",
+    "doc" : "Unix epoch time in seconds"
+  } ],
+  "doc:" : "Demo driver geolocation ping"
+}

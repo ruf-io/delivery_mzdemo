@@ -1,0 +1,31 @@
+{
+  "type" : "record",
+  "name" : "order",
+  "namespace" : "com.materialize.geodemo",
+  "fields" : [ {
+    "name" : "id",
+    "type" : "int",
+    "doc" : "Order ID"
+  }, {
+    "name" : "lat",
+    "type" : "float",
+    "doc" : "Order latitude"
+  }, {
+    "name" : "lon",
+    "type" : "float",
+    "doc" : "Order Longitude"
+  }, {
+    "name" : "ts",
+    "type" : "long",
+    "doc" : "Order create time in unix epoch time in seconds"
+  }, {
+    "name" : "status",
+    "type" : "int",
+    "doc" : "Order status (0 = pending, 1 = ready, 2 = claimed, 3 = picked_up, 4 = cancelled)"
+  } {
+    "name" : "business_name",
+    "type" : "string",
+    "doc" : "Name of business fulfilling the order"
+  } ],
+  "doc:" : "Demo order for pickup/delivery"
+}
